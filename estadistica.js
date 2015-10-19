@@ -8,7 +8,6 @@ function main(){
     var mas60 = 0;
     var contador = 0;
     var input;
-    alert("Variables declaradas");
     while(input != -99){
         contador++;
         input = parseInt(prompt("Ingrese el peso del alumno " + contador + ",para salir ingrese -99"));
