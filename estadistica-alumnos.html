@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Funciones en JavaScript</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    <body>
+      <!-- Se desea realizar una estadistica de los pesos de los alumnos de un colegio, de acuerdo a la siguiente tabla:
+          +Alumnos de menos de 40Kg
+          +Alumnos entre 40 y 50Kg
+          +Alumnos de mas de 50kg y menos de 60kg
+          +Alumnos de mas o igual a 60Kg
+      La entrada de los pesos de los alumnos se terminará cuando se introduzca el calor centinela -99. al final se desea obtener cuántos alumnos hay en cada uno de los baremos.-->
+
+      <div class="container"><br><br>
+          <table class="table table-bordered col-xs-12 col-md-6 col-lg-4">
+            <tr>
+              <th>Alumnos</th>
+            </tr>
+            <tr>
+              <th width="50%"><40Kg</th>
+              <td id="menores-40Kg"></td>
+            </tr>
+            <tr>
+              <th>Entre 40Kg y 50 Kg</th>
+              <td id="entre-40Kg-50Kg"></td>
+            </tr>
+              <th>Mas de 50Kg, menos de 60Kg</th>
+              <td id="entre-50Kg-60Kg"></td>
+            </tr>
+            <tr>
+              <th>Mas o igual a 60Kg</th>
+              <td id="mas-60Kg"></td>
+            </tr>
+          </table>
+      </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./estadistica.js"></script>
+  </body>
+</html>

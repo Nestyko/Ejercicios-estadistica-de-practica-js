@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Funciones en JavaScript</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script language="javascript">
+    function calcularComision(cantVentas){
+      var comiTotal = 0;
+      var k;
+      var comision, montoVenta;
+      for(k = 1; k <= cantVentas;k++){
+        montoVenta = parseFloat(prompt("Ingrese el monto de la venta#" + k));
+        if(montoVenta<200){
+          comision = montoVenta * 0.05;
+        }else{
+          comision = montoVenta * 0.075;
+        }
+        comiTotal += comision;
+      }
+      return comiTotal;
+    }
+
+    </script>
+  </head>
+  <body>
+
+    <div class="container">
+    <div class="text-center">
+      <h1>Manejo de Funciones</h1><br>
+      <h2>Funciones Implementadas por el Programador</h2><br>
+    </div>
+      <p>Un vendedor desea calcular su comisión total sobre la venta de varios artículos. Al vendedor le corresponde el 5% de comision por los arículos cuyo precio es menor de 200bs, y el 7.5%de comision por los artículos cuyo precio sea mayor o igual a 200bs. Suponga que el vendedor realizó N ventas. Implemente una función JavaScript para resolver el problema</p>
+    </div>
+
+
+    <script language="javascript">
+    var cantidadVentas;
+    var comiTotal;
+    cantidadVentas = parseInt(prompt("Indique la cantidad de ventas"));
+    comiTotal = calcularComision(cantidadVentas);
+    alert("La comision ganada por el vendedor es de Bs. " + comiTotal);
+
+    </script>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./ejercicios-js.js"></script>
+  </body>
+</html>

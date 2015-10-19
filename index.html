@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Ejercicios de JavaScript</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <div class="container">
+          <h1>Ejercicios de JavaScript</h1>
+            <div class="row">
+              <div class="col-xs-12 col-lg-4">
+                  <h3>Factorial de un Número</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="input-group">
+                    <input id="factorial-input" min="0" type="text" class="form-control" placeholder="Farcorial de...">
+                    <span class="input-group-btn">
+                        <button id="factorial-btn" class="btn btn-default" type="button">Calcular!</button>
+                    </span>
+                </div><!-- /input-group -->
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <p id="factorial-result"></p>
+              </div>
+          </div>
+          <!-- Ulam Calculator -->
+          <div class="row">
+              <div class="col-xs-12 col-lg-4">
+                  <h3>Calculadora Ulam</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="input-group">
+                    <input id="ulam-input" type="text" class="form-control" placeholder="Ulam de...">
+                    <span class="input-group-btn">
+                        <button id="ulam-btn" class="btn btn-default" type="button">Calcular!</button>
+                    </span>
+                </div><!-- /input-group -->
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <p id="ulam-result"></p>
+              </div>
+          </div>
+
+        <!-- Conteo regresivo -->
+          <div class="row">
+              <div class="col-xs-12 col-lg-4">
+                  <h3>Conteo Regresivo</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="input-group">
+                    <input id="conteo-regresivo-input" type="text" class="form-control" placeholder="Contar desde...">
+                    <span class="input-group-btn">
+                        <button id="conteo-regresivo-btn" class="btn btn-default" type="button">Calcular!</button>
+                    </span>
+                </div><!-- /input-group -->
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <p id="conteo-regresivo-result"></p>
+              </div>
+          </div>
+
+
+
+
+      </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./ejercicios-js.js"></script>
+  </body>
+</html>
