@@ -32,6 +32,19 @@
 		}
 	}
 	
+	function determinarPasatiempo(){
+		$('#pasatiempo: checkbox').click(function(){
+			alert("checkbox clicked");
+			var $this = $(this);
+			// $this will contain a reference to the checkbox
+			var respuesta = "Su pasatiempo es";
+			if($this.is(':checked')){
+				respuesta.append($this.val());
+			}
+			alert(respuesta);
+		});
+	}
+	
 	</script>
     
     
@@ -62,6 +75,7 @@
             <input type="email" class="form-control" id="email" placeholder="diego_vega@gmail.com" maxlength="35" required="required">
           </div>
           <div class="form-group" id="tipo-de-pago">
+          	<label for="tipo-de-pago">Tipo de Pago</label>
           	<div class="radio">
               <label>
                 <input type="radio" name="tipo-de-pago" id="efectivo" value="efectivo" checked onClick="determinarTipoPago();">
@@ -98,6 +112,7 @@
       </fieldset>
       <fieldset id="datos-complementarios">
       	<label for="datos-complementarios">Datos Complementarios</label>
+        <form id="pasatiempo">
         <div class="form-group">
         	<label for="pasatiempo">Pasatiempo</label>
            <div class="checkbox">
@@ -121,6 +136,7 @@
     		</label>
   		   </div>
         </div>
+        </form>
         <div class="form-group" id="nivel-de-estudios">
         	<label for="nivel-de-estudios">Nivel de Estudios</label>
         	<select class="form-control">
